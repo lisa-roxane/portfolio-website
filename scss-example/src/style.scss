@@ -1,0 +1,54 @@
+// Variables
+// colors
+$primary-background-color: #112055;
+$primary-background-color-lighter: lighten($primary-background-color, 20%);
+$primary-background-color-darker: darken($primary-background-color, 20%);
+$secondary-background-color: #4f9d92;
+$primary-color: #fff;
+$secondary-color: #000;
+$hover-color: lighten($secondary-background-color, 40%);
+
+
+.box__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+%box-shared {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px
+    rgba(0,0,0,0.3);
+  &:hover {
+    box-shadow: none;
+    background-color: $hover-color;
+    color: $secondary-color;
+  }
+}
+
+.box-primary {
+  @extend %box-shared;
+  background-color: $primary-background-color;
+  color: $primary-color;
+}
+
+.box-primary-lighter {
+  @extend %box-shared;
+  background-color: $primary-background-color-lighter;
+    color: $primary-color;
+}
+
+.box-primary-darker {
+  @extend %box-shared;
+  background-color: $primary-background-color-darker;
+    color: $primary-color;
+}
+
+.box-secondary {
+  @extend %box-shared;
+  background-color: $secondary-background-color;
+  color: $secondary-color;
+}
