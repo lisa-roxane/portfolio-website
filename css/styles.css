@@ -180,21 +180,22 @@ Secondary Color (Orange): #e0b354;
         display: inline-block;
         margin-left: auto;
         margin-right: auto;
-        width: 200px;
+        width: 500px;
     }
     
     label {
         display: block;
+        text-align: left;
     }
     
     input {
         display: inline-block;
         text-align: left;
-        width: 200px;
+        width: 500px;
     }
     
     textarea {
-        width: 200px;
+        width: 500px;
     }
     /* Code below applies to the Button */
     
