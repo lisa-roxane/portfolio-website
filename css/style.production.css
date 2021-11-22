@@ -5,22 +5,21 @@
 * Browsers: last 4 version
 */
 
-
-/*
+ /*
 Colors used:
 
 Text Color (Dark Gray): #2b2b2b;
 Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
  */
-
-a {
+    
+ a {
     color: #357b70;
 }
 
 * {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -34,8 +33,6 @@ body {
     /* Sets the line-height to 1.6 */
     text-align: left;
 }
-
-
 /* Code applies to Header */
 
 .page-header {
@@ -48,15 +45,15 @@ body {
 
 .page-header__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 200px;
-    flex: 0 1 200px;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
     width: 20%;
 }
 
 .page-header__item:last-child {
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: right;
 }
 
@@ -72,8 +69,6 @@ body {
 .navigation-list__item--active {
     text-decoration: none;
 }
-
-
 /* Code below applies to head Navigation */
 
 ul {
@@ -88,8 +83,6 @@ li {
     float: left;
     padding: 2px 5px;
 }
-
-
 /* Code below applies to Home Page Profile Photo*/
 
 .profile__portrait {
@@ -103,8 +96,6 @@ li {
     max-width: 700px;
     margin: 0 auto;
 }
-
-
 /* Code applies to About section */
 
 .about {
@@ -115,8 +106,6 @@ li {
 #about-header {
     text-align: center;
 }
-
-
 /* Code below applies to the table */
 
 .index-table,
@@ -175,7 +164,7 @@ contact {
 }
 
 .contact {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
@@ -205,8 +194,6 @@ input {
 textarea {
     width: 500px;
 }
-
-
 /* Code below applies to the Button */
 
 a {
@@ -269,8 +256,6 @@ button:focus {
     background-color: #e0b354;
     color: #2b2b2b;
 }
-
-
 /* Code from 1.7 for the button PDF link */
 
 .button {
@@ -330,8 +315,6 @@ button:focus,
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
 }
-
-
 /* Code below applies to footer */
 
 .page-footer {
@@ -341,27 +324,21 @@ button:focus,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
-
-
 /* Code below applies to grid of work */
 
 #work-header {
     text-align: center;
 }
-
-
 /* start grid fallback */
 
 .grid__item {
     display: inline-block;
     width: 33%;
 }
-
-
 /* end grid fallback */
 
 @supports (display: grid) {
@@ -440,8 +417,6 @@ button:focus,
         fill: #f76414;
     }
 }
-
-
 /*
 .sun {
  all 5 lines of code can be put into a single line 
@@ -454,59 +429,59 @@ animation-timing-function: linear;
 
 .sun {
     -webkit-animation: 5s color-change infinite alternate linear;
-    animation: 5s color-change infinite alternate linear
+            animation: 5s color-change infinite alternate linear
 }
 
 @-webkit-keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
+                transform: translate(0, 50px);
     }
     to {
         -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
     }
 }
 
 @keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
+                transform: translate(0, 50px);
     }
     to {
         -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
     }
 }
 
 .cloud-front {
     -webkit-animation: 30s cloud-move infinite alternate linear;
-    animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
     }
     to {
         -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
     }
 }
 
 @keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
     }
     to {
         -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
     }
 }
 
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-    animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
 }
