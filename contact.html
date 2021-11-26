@@ -47,7 +47,8 @@
             <br> Email: <a href="mailto:lisa.roxane@gmail.com">lisa.roxane@gmail.com</a>
  
             <h2>I look forward to hearing from you.</h2>
-            <form id="contact-form" action="" method="post">
+            <form>
+                <!-- REMOVED from form to pass W3C validation, I suspect we might add this back in at a later time - id="contact-form" action="" method="post" -->
                 <label class="standard-label" for="contact-name">* Name: </label>
 
                 <input type="text" id="contact-name" required>
@@ -87,7 +88,7 @@
         </div>
     </footer>
     <!-- Do I connect these to my accounts? -->
-    <script src="js/tota11y.min.js"></script>
+    <!-- Commented out to elinimate from view in the Cross Browser testing<script src="js/tota11y.min.js"></script> -->
 </body>
 
 </html>
