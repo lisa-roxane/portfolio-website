@@ -200,10 +200,6 @@ Secondary Color (Orange): #e0b354;
     }
     /* Code below applies to the Button */
     
-    a {
-        color: var(--primary-green);
-    }
-    
     a:visited,
     a:focus {
         /* visited link */
